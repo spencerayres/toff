@@ -1,9 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @resource.name %>
-</p>
+<div class="center">
+    <div class="row">
+      <% @resource.each do |resource| %>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <h3> <%= resource.name %></h3>
+
+          </div>
+      </div>
+    <% end %>
+  </div>
+</div>
 
 <p>
   <strong>Url:</strong>
