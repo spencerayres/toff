@@ -1,0 +1,26 @@
+<h1>Resources</h1>
+
+<div class="center">
+    <div class="row">
+      <% @resource.each do |resource| %>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <h3> <%= resource.name %></h3>
+              <div class="caption">
+                <p> <%= resource.url %></p>
+                <p> <%= resource.category %></p>
+                <p> <%= resource.order %></p>
+                <p> <%= link_to 'Show', resource %></p>
+                <p> <%= link_to 'Edit', edit_resource_path(resource) %></p>
+                <p> <%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+
+              </div>
+          </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+<br>
+<%= link_to 'New Resource', new_resource_path, class: "btn btn-link" %>
