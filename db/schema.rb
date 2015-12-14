@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151211181046) do
+ActiveRecord::Schema.define(version: 20151214152806) do
 
   create_table "resources", force: true do |t|
     t.string   "name"
@@ -21,6 +21,10 @@ ActiveRecord::Schema.define(version: 20151211181046) do
     t.integer  "order"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
 end

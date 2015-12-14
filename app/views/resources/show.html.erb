@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag @resource.image.url(:medium) %>
 <p>
   <strong>Name:</strong>
   <%= @resource.name %>
@@ -25,5 +26,5 @@
   <%= @resource.order %>
 </p>
 
-<%= link_to 'Edit', edit_resource_path(@resource) %> |
-<%= link_to 'Back', resources_path %>
+<%= link_to 'Edit', edit_resource_path(@resource), class: "btn btn-link"  %> |
+<%= link_to 'Back', resources_path, class: "btn btn-link"  %>
