@@ -20,6 +20,10 @@ gem 'bootstrap-sass', '~> 3.3.5'
 # Use paperclip for image save
 gem "paperclip", "~> 4.3"
 
+gem "figaro"
+
+gem "paperclip-dropbox", ">= 1.1.7"
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
